@@ -12,18 +12,33 @@ body {
   padding: 40px;
 }
 
-h1 {
+/* Profile section */
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+  border: 3px solid #2c3e50;
+}
+
+.profile .info h1 {
   font-size: 2.5rem;
   color: #2c3e50;
   margin-bottom: 10px;
 }
 
-h2 {
-  font-size: 1.5rem;
-  color: #34495e;
-  margin-bottom: 10px;
+.profile .info p {
+  margin-bottom: 6px;
 }
 
+/* Card layout */
 .card {
   background-color: #fff;
   padding: 25px;
@@ -35,6 +50,12 @@ h2 {
 
 .card:hover {
   transform: scale(1.02);
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #34495e;
+  margin-bottom: 10px;
 }
 
 ul {
@@ -50,12 +71,22 @@ p {
   margin-bottom: 8px;
 }
 
+/* Responsive design */
 @media (max-width: 768px) {
   body {
     padding: 20px;
   }
 
-  h1 {
+  .profile {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile img {
+    margin-bottom: 15px;
+  }
+
+  .profile .info h1 {
     font-size: 2rem;
   }
 
@@ -67,4 +98,3 @@ p {
     padding: 20px;
   }
 }
-
