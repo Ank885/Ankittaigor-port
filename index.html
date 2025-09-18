@@ -1,68 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ankit Taigor – DevOps & Cloud Engineer</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ankit Taigor | DevOps & Cloud Engineer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <header class="profile">
-    <img src="profile.jpeg" alt="Ankit Taigor">
-    <div class="info">
-      <h1>Ankit Taigor</h1>
-      <p class="role">DevOps & Cloud Engineer Trainee</p>
-      <p><strong>Location:</strong> Noida Sector 56, Rajat Vihar, Khora Colony</p>
-      <p><strong>Email:</strong> <a href="mailto:ankittaigor5@gmail.com">ankittaigor5@gmail.com</a></p>
-      <p><strong>Phone:</strong> <a href="tel:+918601251489">+91 8601251489</a></p>
-    </div>
+  <header>
+    <h1>Ankit Taigor</h1>
+    <p>DevOps & Cloud Engineer Trainee</p>
   </header>
 
-  <section class="card">
-    <h2>🎓 Education</h2>
-    <p>B.Tech in Mechanical Engineering – KCNIT (AKTU, Lucknow)</p>
-    <p>CGPA: 7.29</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#training">Training</a>
+    <a href="#education">Education</a>
+    <a href="#languages">Languages</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>Profile Summary</h2>
+    <div class="card">
+      <p>Enthusiastic Mechanical Engineering graduate with hands-on 
+      experience in Linux, AWS, and DevOps tools like Git, Docker, Jenkins,
+      and Kubernetes. Skilled in automating tasks, managing cloud 
+      infrastructure, and implementing CI/CD pipelines. Eager to 
+      contribute to real-world DevOps environments and continuously 
+      grow in cloud-native technologies.</p>
+    </div>
   </section>
 
-  <section class="card">
-    <h2>⚙️ Skills</h2>
-    <ul>
-      <li>Linux (Red Hat, Ubuntu, CentOS)</li>
-      <li>AWS: EC2, S3, VPC, IAM, RDS, Lambda, CloudFormation</li>
-      <li>DevOps Tools: Docker, Kubernetes, Terraform, Ansible, Jenkins, Git</li>
-      <li>Monitoring: Grafana</li>
-    </ul>
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card skills">
+      <h3>Operating Systems</h3>
+      <span>Linux (Red Hat, Ubuntu, CentOS)</span>
+
+      <h3>Cloud Platforms</h3>
+      <span>AWS EC2</span><span>S3</span><span>VPC</span><span>IAM</span>
+      <span>RDS</span><span>Lambda</span><span>CloudFormation</span>
+      <span>Auto Scaling</span><span>Load Balancers</span><span>CloudWatch</span>
+      <span>ECR</span><span>ECS</span><span>AWS CLI & SDKs</span>
+
+      <h3>DevOps & Automation</h3>
+      <span>Docker</span><span>Kubernetes</span><span>Terraform</span>
+      <span>Ansible</span><span>Jenkins (CI/CD)</span>
+      <span>Git & GitHub</span><span>Grafana (Monitoring)</span>
+    </div>
   </section>
 
-  <section class="card">
-    <h2>🚀 Projects</h2>
-    <ul>
-      <li><strong>Docker Compose Web App:</strong> NGINX + Django + MySQL with health checks</li>
-      <li><strong>AWS 3-Tier Architecture:</strong> EC2, Load Balancer, RDS, CloudFormation automation</li>
-    </ul>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>3-Tier Web Application with Docker Compose</h3>
+      <ul>
+        <li>Designed and deployed a scalable 3-tier web application using Docker Compose.</li>
+        <li>Integrated NGINX (reverse proxy), Django with Gunicorn (backend), and MySQL (database).</li>
+        <li>Containerized each service and orchestrated via custom docker-compose.yml.</li>
+        <li>Implemented health checks, environment variables, and persistent volumes for reliability.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Three-Tier Web Application Deployment on AWS</h3>
+      <ul>
+        <li>Deployed a scalable 3-tier architecture using EC2 (web tier), Application Load Balancer, and RDS (database tier).</li>
+        <li>Configured Auto Scaling, IAM roles, Security Groups, and CloudWatch for monitoring.</li>
+        <li>Automated infrastructure provisioning with CloudFormation (IaC).</li>
+      </ul>
+    </div>
   </section>
 
-  <section class="card">
-    <h2>📚 Training</h2>
-    <p>DUCAT – Noida Sector 16</p>
-    <p>Linux, AWS, DevOps Tools</p>
+  <section id="training">
+    <h2>Training</h2>
+    <div class="card">
+      <p>Currently training in Linux, AWS, and DevOps at <strong>DUCAT - Noida Sector 16</strong>.</p>
+    </div>
   </section>
 
-  <section class="card">
-    <h2>🌍 Languages</h2>
-    <ul>
-      <li>English – Fluent</li>
-      <li>Hindi – Native</li>
-    </ul>
+  <section id="education">
+    <h2>Education</h2>
+    <div class="card">
+      <p><strong>B.Tech in Mechanical Engineering</strong><br>
+      KCNIT (AKTU, Lucknow), 2022-23<br>
+      Graduated with 7.29 CGPA</p>
+    </div>
   </section>
 
-  <section class="card contact">
-    <h2>📞 Contact Me</h2>
-    <p><strong>Email:</strong> <a href="mailto:ankittaigor5@gmail.com">ankittaigor5@gmail.com</a></p>
-    <p><strong>Phone:</strong> <a href="tel:+918601251489">+91 8601251489</a></p>
-    <p><strong>Location:</strong> Noida Sector 56, Rajat Vihar, Khora Colony</p>
+  <section id="languages">
+    <h2>Languages</h2>
+    <div class="card skills">
+      <span>English: Fluent</span>
+      <span>Hindi</span>
+    </div>
   </section>
 
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p><strong>Phone:</strong> 8601251489</p>
+      <p><strong>Email:</strong> ankittaigor5@gmail.com</p>
+      <p><strong>Address:</strong> Noida Sector 56, Rajat Vihar, Khora Colony</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Ankit Taigor | Portfolio Website</p>
+  </footer>
 </body>
 </html>
